@@ -10,7 +10,9 @@ and open the template in the editor.
         <script type= "text/Javascript">    </script>
         <style>
             h1 {
-                color:darkblue;
+                align-content: center;
+                    vertical-align: middle;
+                    color:darkblue;
                 background-color: silver;
                 font-family: monospace;
                 text-align: center
@@ -24,20 +26,49 @@ and open the template in the editor.
             body{background-color: windowframe}
             h2#first{color: red}
             .h1h2{background-color: peru}
-            .org{}
+ .outer {display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        }
+        
+        .middle { display: table-cell;
+        vertical-align: middle;
+        }
+        .inner { margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        }
+            #homework{
+                
+                          width: 100%;
+                      border: 1px solid black;
+                      font-size: 300%
+            }
          </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
     
-    <body bgcolor="">
-        <div> <table id="org"> <tr><td>middle</td></tr></table>
-        <h1 style="text-align: right "> Welcome to MY world! </h1>
-        <h2 id="first" > I want you to be enjoy in my world </h2>
-        <h2 class="h1h2"> Time will pass fast </h2>
-        <p> I hope  time will pass as fast as you think  </p> 
+    <body>
+           <h1>  </h1>
+            <h2>  </h2>
+            <h3>  </h3>
+            <h4>  </h4>
+            <h5>  </h5>
+            
+    <div class="outer">
+    <div class="middle">
+    <div class="inner">
+        <table id="homework" style="text-align:center;" border="1" horizontal="center">
+                <tr><td>a</td><td>b</td><td>c</td></tr>
+                <tr><td>1</td><td>2</td><td>3</td></tr>
+                <tr><td>x</td><td>y</td><td>z</td></tr></table>
         </div>
+    </div>
+    </div>
+    
         
     </body>
 </html>
