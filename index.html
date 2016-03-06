@@ -6,69 +6,48 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title> CS102 </title>
-        <script type= "text/Javascript">    </script>
-        <style>
-            h1 {
-                align-content: center;
-                    vertical-align: middle;
-                    color:darkblue;
-                background-color: silver;
-                font-family: monospace;
-                text-align: center
-            }
-            h2{
-                font-family: serif;
-                font-size: 2em;
-                color: seagreen;
-                background-color: bisque
-            } 
-            body{background-color: windowframe}
-            h2#first{color: red}
-            .h1h2{background-color: peru}
- .outer {display: table;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        }
-        
-        .middle { display: table-cell;
-        vertical-align: middle;
-        }
-        .inner { margin-left: auto;
-        margin-right: auto;
-        width: 400px;
-        }
-            #homework{
-                
-                          width: 100%;
-                      border: 1px solid black;
-                      font-size: 300%
-            }
-         </style>
+        <title>position some divs </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
-    
+        <style>
+            .box {width: 10%;
+                 height: 10%;}
+            #d1{ 
+                 position: absolute;
+                 
+                 left: 45%;
+                 top: 45%;
+                 
+                 background-color: blue;
+                 z-index:1;
+            }
+            #d2{
+                position:absolute; 
+                left: 50%;
+                top: 50%;
+                opacity: 0.5;
+                background-color:purple;
+                z-index:2;
+                  
+            }
+            #d3{
+                position: absolute;
+                left: 52.5%;
+                top: 50%;
+                width: 5%;
+                height: 10%;
+                opacity: 0.9;
+                background-color:orangered;
+                z-index:3;
+                
+                   
+                    
+                    
+            }
+        </style> </head>
     <body>
-           <h1>  </h1>
-            <h2>  </h2>
-            <h3>  </h3>
-            <h4>  </h4>
-            <h5>  </h5>
-            
-    <div class="outer">
-    <div class="middle">
-    <div class="inner">
-        <table id="homework" style="text-align:center;" border="1" horizontal="center">
-                <tr><td>a</td><td>b</td><td>c</td></tr>
-                <tr><td>1</td><td>2</td><td>3</td></tr>
-                <tr><td>x</td><td>y</td><td>z</td></tr></table>
-        </div>
-    </div>
-    </div>
-    
-        
+        <div id="d1" class="box"> </div>
+        <div id="d2" class="box"> </div>
+        <div id="d3"> </div>
     </body>
 </html>
