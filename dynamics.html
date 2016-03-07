@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic contents</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+         <style>
+           #outer {position: absolute;
+           top: 45%;
+           left: 45%;
+           }
+           #inner{ clear: both;
+                   vertical-align: central;
+                   text-align: center;
+           }
+        </style> 
+    </head>
+    <body>
+        <div id="outer">
+            <span id="inner"> hello 
+            </span>
+        </div>
+        <script>
+            $('#inner').hover (
+                    function() {
+                $(this).css("background-color","green");
+            },
+            function() {
+                $(this).css("background-color","white");
+            }
+            );
+     
+        $('#inner').click(
+            function () (
+            window.location "http://www.hello.com";
+       );
+         </script>
+    </body>
+</html>
