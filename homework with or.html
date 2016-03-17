@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title> OR BY AND-NOT </title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div>
+    <input type="text" placeholder=" enter one basepair " /> 
+    <input type="button" id="CHECK" value="CHECK" onclick="result();"/>
+    <input type="text" id="output1" disabled>
+    
+</div>
+<script type="text/Javascript">
+   
+    function result() {
+     var j= "T";
+   var k= "U";
+    
+         if (j,k) {
+             var res1 = "j";
+             $('#output1').val("DNA");
+         } else if {
+             
+             var res2= "k";
+             $('#output2').val("RNA");
+         } else {
+             $('#error').html("This basepair does not determine structure");
+         }
+             
+     } 
+     function checkres1 (k,j){
+         if (isNaN("j") ! isNaN("k")){
+             return true;
+     }
+        return false;
+    }
+   
+     function checkres2 (j,k) {
+         if (isNaN ("k") ! isNaN("j")) {
+             return true;
+             
+         }
+         return false;
+     }
+       function checkres3 (j,k) {
+           if (isNaN ("k") && isNaN("j")) {
+               return false;
+           }
+           return true
+       }
+    
+</script>
+</body>
+</html>
